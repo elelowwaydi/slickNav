@@ -1,0 +1,6 @@
+# Folders to ignore
+node_modules
+bower_components
+
+# OS or Editor folders
+Thumbs.db

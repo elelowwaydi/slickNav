@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SlickNav</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <style>
+        #slider {
+            margin-bottom: 30px;
+        }
+
+        #slider .slide-item img {
+            height: 500px;
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .slider-nav {
+            display: table;
+            margin: auto;
+        }
+
+        .slider-nav>li {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .slider-nav>li.active>a {
+            color: red;
+        }
+
+        .slider-nav>li>a {
+            font-size: 18px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="slider">
+            <div class="slide-item">
+                <img src="./img/pexels-photo-animals.jpg" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./img/pexels-photo-abstract.jpg" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./img/pexels-photo-city.jpg" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./img/pexels-photo-food.jpg" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./img/pexels-photo-nature.jpg" alt="">
+            </div>
+        </div>
+
+        <ul class="slider-nav list-inline" data-slick-nav="slider">
+            <li><a href="#">Animals</a></li>
+            <li><a href="#">Abstract</a></li>
+            <li><a href="#">City</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Nature</a></li>
+        </ul>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../src/slickNav.js"></script>
+    <script>
+        $("#slider").slick({
+            dota: true,
+            // autoplay: true,
+            // autoplaySpeed: 2000,
+        });
+
+        $(".slider-nav").slickNav();
+    </script>
+</body>
+
+</html>

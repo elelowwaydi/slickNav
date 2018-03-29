@@ -1,0 +1,30 @@
+{
+  "name": "slicknav",
+  "version": "1.0.0",
+  "description": "custom navigation for slick slider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elelowwaydi/slickNav.git"
+  },
+  "keywords": [
+    "slick",
+    "slider",
+    "nav"
+  ],
+  "author": "elelowwaydi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elelowwaydi/slickNav/issues"
+  },
+  "homepage": "https://github.com/elelowwaydi/slickNav#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
